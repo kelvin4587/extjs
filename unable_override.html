@@ -1,0 +1,21 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>unable override</title>
+  </head>
+  <script type="text/javascript">
+    function myFunc(test){
+      alert("func1");
+    }
+    function myFunc(){
+      alert("func2");
+    }
+    window.onload=function(){
+      myFunc();
+      myFunc("test");
+    }
+  </script>
+  <body>
+
+  </body>
+</html>
